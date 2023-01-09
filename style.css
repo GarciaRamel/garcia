@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,600;0,700;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+html{
+    scroll-behavior: smooth;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    margin: 10px;
+}
+nav{  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gray;
+    margin: 10px;  
+}
+.nav-links ul{
+display: flex;
+list-style-type: none;
+margin: 15px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color:black;
+    margin:0 14px;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+nav ul li a:hover{
+    background-color:salmon ;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+.main-page{
+    padding: 3%;
+}
+.row{
+    display: flex;
+}
+.col-1{
+    flex-basis: 50%;
+    text-align: center;
+}
+span{
+    margin-left: 2%;
+    margin-top: 4%;
+    color: black;
+}
+.col-1 h1{
+    margin-top: 200px;
+    font-size: 200%;
+    color: #000;
+    margin-bottom: 5%;
+}
+.col-2 img{
+    width: 500px;
+}
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills p{
+    margin: 35px 14px;
+}
+.skills svg{
+    margin: 35px 14px;
+    width: 30px; 
+    cursor: pointer;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: rgba(0, 102, 255, 0.74);
+    border: 1px solid white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover{
+    transition: all .6s ease;
+    background-color: rgba(226, 40, 33, 0.911);
+    box-shadow:0 0 10px black; 
+}
+/*About Section*/
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 50px;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 550px;
+    height: 400px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+/*Portfolio Section*/
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
+/*Services SEction*/
+#services{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 0.5) ;
+    margin: 10px;
+    
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid white;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(to top,#000 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+    cursor: pointer;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px lightblue;
+    cursor: pointer;
+}
+.box img{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    padding: 10px;
+}
+
+/*Contact Section */
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    background-color: gray;
+    margin: 10px;
+}
+.form{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px ;
+}
+.input{
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+#msg{
+    display: flex;
+    flex-direction: column;
+    width: 67%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 20%;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+    background-color: salmon;
+    justify-content: center;
+}
